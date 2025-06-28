@@ -75,5 +75,11 @@ class SportsVehicle : public Vehicle{
 
 
 int main(){
-    
+    GoodsVehicle gv;
+    SportsVehicle sv;
+    PassengerVehicle pv;
+    cout<< gv.drive()<<endl;
+    cout<< sv.drive()<<endl;
+    cout<< pv.drive()<<endl;
+
 }
