@@ -49,6 +49,7 @@
         "vector": "cpp",
         "algorithm": "cpp",
         "__tree": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "tuple": "cpp"
     }
 }
