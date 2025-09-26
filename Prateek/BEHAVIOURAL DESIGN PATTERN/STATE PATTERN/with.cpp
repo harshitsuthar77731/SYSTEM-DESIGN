@@ -40,7 +40,7 @@ class CYCLE : public TransportationInterface {
             return 8;
         };
         string getDirection() override{
-            return "Take left than take right than take cycle path for 40 km";
+            return "Take left than take right than take cycle path for 40 km\n";
         };
 };
 
@@ -54,7 +54,7 @@ class CAR : public TransportationInterface {
             return 3;
         };
         string getDirection() override{
-            return "Take left than take right than straight for 30 km";
+            return "Take left than take right than straight for 30 km\n";
         };
 };
 
@@ -63,13 +63,13 @@ class BUS : public TransportationInterface {
     public :
         void handle(DirectionService *context){
             context->setMode(make_shared<CAR>());
-            cout<<"Switching mode from bus to car"<<endl;
+            cout<<"Switching mode from bus to car\n"<<endl;
         }
         int eta() override{
             return 4;
         };
         string getDirection() override{
-            return "Take left than take right than straight for 40 km";
+            return "Take left than take right than straight for 40 km\n";
         };
 };
 
